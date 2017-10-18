@@ -1,33 +1,46 @@
-
-/********** Base styles **********/
-* {
+* { /* CSS3 border box özelliği */
   box-sizing: border-box;
 }
-h1 {
-  margin-bottom: 15px;
+
+p { /* paragraf */
+  border: 1px solid black; /* 1 piksel kenarlık */
+  background-color: gray; /* arkaplan rengi gri */
+  height: 150px; /* kutu boyu 150 piksel */
+  font-family: Helvetica; /* kutu yazı fontu helvetica*/
+  color: white; /* yazı rengi beyaz*/
+  overflow: hidden; /* yazı taşmasında ignore et. */
 }
 
-p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+.name{ /* Kategori İsimleri classı*/
+  position: relative; /* relative positioning*/
+  right: -1px; /* Tam sağa yapışması için*/
+  top: -1px; /* Tam yukarı yapışması için*/ 
+
+  width: auto; /* en otomatik */
+  height: auto; /* boy  otomatik */
+
+  border: 1px solid black; /* 1 piksel kenarlık siyah*/
+  float: right; /* başlık kutusunu sağa sabitle */
+  color: black; /* başlık kutusu yazı rengi siyah */
+
+  /* yazı kutusunun padding değerleri */
+  padding-top: 3px; 
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 3px;
 }
 
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
+
+.row > div {
+      margin-right: 5px; /* KUTU ARALARINDAKİ BOŞLUK */
 }
 
-/********** Large devices only **********/
+
+
+/********** MEDIA QUERY KODLARI **********/
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -67,11 +80,9 @@ p {
   }
 }
 
-/********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
