@@ -1,0 +1,70 @@
+* { /* CSS3 border box özelliği */
+  box-sizing: border-box;
+}
+
+/** HEADER **/
+#header-nav { 
+  background-color: gray; /* header arkaplan rengi gri */
+  border-radius: 0;
+  border: 0; /* kenarlıksız */
+}
+
+.navbar-brand {
+  padding-top: 15px; /* Şirket ismi üstten (top) hizalama */
+}
+
+.navbar-brand h1 { /* Şirket ismi yazıtipi ayarları */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.00;
+  /*line-height: .75;*/
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none; /* şirket ismi linki alt çizgisiz yapar */
+}
+
+
+#nav-list a {
+  color:#ffffff ; /* navigasyon menüsü yazı rengi */
+  text-align: center; /* navigasyon menüsü yazı ortalı */ 
+}
+#nav-list a:hover { 
+  background: #951C49; /* navigasyon menüsü üzerine fareyle gelince değişen renk */
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f; /* navigasyon menüsü butonu rengi */
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+
+
+
+
+
+div.food { /* paragraf */
+  border: 1px solid black; /* 1 piksel kenarlık */
+  background-color: gray; /* arkaplan rengi gri */
+  font-family: Helvetica; /* kutu yazı fontu helvetica*/
+  color: white; /* yazı rengi beyaz*/
+  overflow: hidden; /* yazı taşmasında ignore et. */
+}
+
+
+.row > div {
+      margin-right: 5px; /* KUTU ARALARINDAKİ BOŞLUK */
+	  margin-top: 10px; /* KUTU ARALARINDAKİ BOŞLUK */
+}
+

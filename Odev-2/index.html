@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- document type html -->
+<html>
+<head> <!-- head tag -->
+	<meta charset="utf-8"> <!-- character set utf-8 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- viewport ile sayfanın responsive olduğunu söylüyoruz.-->
+
+	<title>UstOrtam HomeWork 2 - the Bootstrap begins.. </title> <!-- sayfa başlığı  -->
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- twitter bootstrap libraryden çekeceğiz css'i -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- sayfanın stil dosyası -->
+	
+	<script src="js/jquery-2.1.4.min.js"></script> <!-- bootstrap'in çalışması gereken jquery javascript dosyası -->
+	<script src="js/bootstrap.min.js"></script> <!-- gerekli olan bootstrap javascript dosyası -->
+</head>
+<body> <!-- sayfa tasarımının başlangıcı -->
+
+<header><!-- header (başlık) başlangıcı -->
+	<nav id="header-nav"><!-- başlık navigasyon bölümü balangıcı. -->
+		<div class="container"><!-- sayfanın responsive özelliği kazanması için gerekli olan container division'ı -->
+			<div class="navbar-header"> <!-- navbar başlığı -->
+				<div class="navbar-brand"><!-- navbar brand yani navbardaki yazacak başlığın kodlanması -->
+					<a href="index.html"><h1>FOOD, LLC.</h1></a><!-- Navbar başlığı -->
+				</div><!-- navbar brand bitişi -->
+				
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<span class="icon-bar"></span> <!-- tost menü çizgisi 1 -->
+					<span class="icon-bar"></span> <!-- tost menü çizgisi 2 -->
+					<span class="icon-bar"></span> <!-- tost menü çizgisi 3 -->
+				</button>
+			</div><!-- navbar başlığı bitişi -->
+			
+			<div id="collapsable-nav" class="collapse navbar-collapse"> <!-- açılabilir menü -->
+				<ul id="nav-list" class="nav navbar-nav navbar-right"> <!-- menü listesi -->
+					<li>
+						<a href="#chicken">Chicken</a>
+					</li>
+					<li>
+						<a href="#beef">Beef</a>
+					</li>
+					<li>
+						<a href="#sushi">Sushi</a>
+					</li>
+
+				</ul><!-- #nav-list -->
+			</div><!-- .collapse .navbar-collapse -->
+		
+		</div><!-- container bitişi -->
+	</nav> <!-- başlık navigasyon bölümü bitişi -->
+</header><!-- header bitişi -->
+<h1 id="ust" class="text-center">Our Menu</h1> <!-- Bootstrap destekli ortalanmış yazı -->
+ 
+<div class="row"> <!-- row class'ı başlangıcı. css ile ayarlanabilmesi için class tanımlaması yapıldı -->
+
+	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12"> <!-- lg md sm xs özelliği -->
+		<div class="food"> <!-- food classı özniteliklerini al -->
+			<p id="chicken" class="text-center" style="font-size:24px;">Chicken</p> <!-- text center ile ortala. font size ile boyutu büyüt. id ile navigasyon menüsünden gelmesini sağla. -->
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet tincidunt posuere. Mauris cursus fermentum dolor. Nunc ornare augue maximus, euismod orci nec, tempor felis. Nunc varius molestie sapien eget vestibulum. Pellentesque vel placerat purus. Suspendisse potenti. Ut varius dictum velit ac molestie. Vivamus a massa euismod, cursus orci in, elementum ex. Ut ullamcorper libero a erat tempus rhoncus. Aliquam tincidunt odio eu mauris vestibulum pulvinar. Etiam hendrerit libero sit amet turpis dictum, et eleifend odio imperdiet. Quisque malesuada diam et elit posuere ornare. Suspendisse imperdiet sodales libero, nec interdum justo gravida et.
+			<br/>
+			In vulputate quam ac mi porttitor condimentum. Integer sed placerat dui. Sed iaculis cursus risus luctus fringilla. Pellentesque in augue a dolor condimentum molestie eu quis turpis. Donec commodo tempus urna, eu iaculis diam sodales ornare. Curabitur aliquam orci ac lobortis hendrerit. Cras volutpat tempor ipsum, vehicula scelerisque mauris efficitur tincidunt. Ut molestie gravida elit, vitae suscipit turpis bibendum a. Praesent faucibus interdum lectus id fringilla. Duis orci purus, posuere eget facilisis id, finibus nec nibh. Morbi eget metus ut nisi commodo mollis.<br/>
+			<a href="#ust">Back to top</a><!-- "ust" id'li our menu kısmına git. -->
+		</div>
+	</div>
+
+	<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12"> <!-- lg md sm xs özelliği -->
+		<div class="food"> <!-- food classı özniteliklerini al -->
+			<p id="beef" class="text-center" style="font-size:24px;">Beef</p><!-- text center ile ortala. font size ile boyutu büyüt. id ile navigasyon menüsünden gelmesini sağla. -->
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet tincidunt posuere. Mauris cursus fermentum dolor. Nunc ornare augue maximus, euismod orci nec, tempor felis. Nunc varius molestie sapien eget vestibulum. Pellentesque vel placerat purus. Suspendisse potenti. Ut varius dictum velit ac molestie. Vivamus a massa euismod, cursus orci in, elementum ex. Ut ullamcorper libero a erat tempus rhoncus. Aliquam tincidunt odio eu mauris vestibulum pulvinar. Etiam hendrerit libero sit amet turpis dictum, et eleifend odio imperdiet. Quisque malesuada diam et elit posuere ornare. Suspendisse imperdiet sodales libero, nec interdum justo gravida et.
+			<br/>
+			In vulputate quam ac mi porttitor condimentum. Integer sed placerat dui. Sed iaculis cursus risus luctus fringilla. Pellentesque in augue a dolor condimentum molestie eu quis turpis. Donec commodo tempus urna, eu iaculis diam sodales ornare. Curabitur aliquam orci ac lobortis hendrerit. Cras volutpat tempor ipsum, vehicula scelerisque mauris efficitur tincidunt. Ut molestie gravida elit, vitae suscipit turpis bibendum a. Praesent faucibus interdum lectus id fringilla. Duis orci purus, posuere eget facilisis id, finibus nec nibh. Morbi eget metus ut nisi commodo mollis.<br/>
+			<a href="#ust">Back to top</a><!-- "ust" id'li our menu kısmına git. -->
+		</div>
+	</div>
+  
+	<div class="col-lg-3 col-md-8 col-sm-8 col-xs-12"> <!-- lg md sm xs özelliği -->
+		<div class="food"><!-- food classı özniteliklerini al -->
+			<p id="sushi" class="text-center" style="font-size:24px;">Sushi</p><!-- text center ile ortala. font size ile boyutu büyüt. id ile navigasyon menüsünden gelmesini sağla. -->
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet tincidunt posuere. Mauris cursus fermentum dolor. Nunc ornare augue maximus, euismod orci nec, tempor felis. Nunc varius molestie sapien eget vestibulum. Pellentesque vel placerat purus. Suspendisse potenti. Ut varius dictum velit ac molestie. Vivamus a massa euismod, cursus orci in, elementum ex. Ut ullamcorper libero a erat tempus rhoncus. Aliquam tincidunt odio eu mauris vestibulum pulvinar. Etiam hendrerit libero sit amet turpis dictum, et eleifend odio imperdiet. Quisque malesuada diam et elit posuere ornare. Suspendisse imperdiet sodales libero, nec interdum justo gravida et.
+			<br/>
+			In vulputate quam ac mi porttitor condimentum. Integer sed placerat dui. Sed iaculis cursus risus luctus fringilla. Pellentesque in augue a dolor condimentum molestie eu quis turpis. Donec commodo tempus urna, eu iaculis diam sodales ornare. Curabitur aliquam orci ac lobortis hendrerit. Cras volutpat tempor ipsum, vehicula scelerisque mauris efficitur tincidunt. Ut molestie gravida elit, vitae suscipit turpis bibendum a. Praesent faucibus interdum lectus id fringilla. Duis orci purus, posuere eget facilisis id, finibus nec nibh. Morbi eget metus ut nisi commodo mollis.<br/>
+			<a href="#ust">Back to top</a><!-- "ust" id'li our menu kısmına git. -->
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
