@@ -1,0 +1,18 @@
+[
+  {
+    "resim": "http://bilmuh.ege.edu.tr/sites/default/files/bilmuh/personel/ogretim_uyeleri/oguz_dikenelli.jpg",
+    "isim": "Oğuz Dikenelli",
+    "unvan": "Bölüm Başkanı",
+    "telefon": "0232 388 72 21",
+    "eposta": "oguz.dikenelli@ege.edu.tr",
+    "tur": "ogretim-uyeleri"
+  },
+  {
+    "resim": "http://bilmuh.ege.edu.tr/sites/default/files/bilmuh/personel/ogretim_uyeleri/serdar_korukoglu.jpg",
+    "isim": "Serdar KORUKOĞLU, Prof.Dr.",
+    "unvan": "Uluslararası Bilgisayar Enstitüsü Müdürü Vekili / Bilgisayar Bilimleri Ana Bilim Dalı Başkanı",
+    "telefon": "0232 311 25 86",
+    "eposta": "serdar.korukoglu@ege.edu.tr",
+    "tur": "ogretim-uyeleri"
+  }
+]
